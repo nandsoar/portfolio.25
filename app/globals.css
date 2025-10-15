@@ -85,13 +85,6 @@
 }
 
 .navbar-hidden {
-    transform: translate3d(0, calc(78px * -1), 0);
-    -webkit-transform: translate3d(0, calc(78px * -1), 0);
-}
-
-@media (min-width: 768px) {
-    .navbar-hidden {
-        transform: translate3d(0, calc(110px * -1), 0);
-        -webkit-transform: translate3d(0, calc(110px * -1), 0);
-    }
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
 }
