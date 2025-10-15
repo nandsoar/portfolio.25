@@ -1,0 +1,206 @@
+{
+  "personal": {
+    "firstName": "Keven",
+    "lastName": "Hernandez",
+    "fullName": "Keven Hernandez",
+    "title": "Software Engineer",
+    "currentRole": "Software Engineer",
+    "location": {
+      "city": "Fort Lauderdale",
+      "state": "FL",
+      "country": "USA",
+      "display": "Fort Lauderdale, FL"
+    },
+    "tagline": "I enjoy working with scalable and distributed systems",
+    "bio": "I'm a tools developer and an avid learner with a passion for languages. I graduated from Army training in 2024 as an avionic mechanic and currently serve part time to focus on my career in software development. My work mostly involves distributed systems and full-stack development."
+  },
+  "contact": {
+    "email": "hkeven89@gmail.com",
+    "phone": "551-697-2593",
+    "links": {
+      "twitter": {
+        "url": "https://twitter.com/eskevv",
+        "username": "eskevv"
+      },
+      "github": {
+        "url": "https://github.com/aerov8/",
+        "username": "aerov8"
+      },
+      "linkedin": {
+        "url": "https://www.linkedin.com/in/eskevv/",
+        "username": "eskevv"
+      }
+    }
+  },
+  "experience": [
+    {
+      "id": "ia-pharmacy",
+      "company": "iA Pharmacy Fulfillment",
+      "position": "Software Engineer",
+      "startDate": "2025-01",
+      "endDate": "Present",
+      "duration": "Jan 2025 - Present",
+      "description": [
+        "Developed software with C# that ran high-volume pharmaceutical workflows for different clients such as Publix",
+        "Work with our fulfillment solutions test team to track down bugs related to various systems, and to ensure the workflow is accurate from order submission to shipment of Rxs from the facility",
+        "Unit test, regression test, and patch validate for numerous app servers to ensure they match and satisfy customer needs",
+        "Travel to central-fill locations to train staff on our NEXiA software and troubleshoot any errors while going live"
+      ],
+      "technologies": [
+        "C#",
+        ".NET",
+        "SQL Server",
+        "Unit Testing",
+        "System Integration"
+      ],
+      "current": true
+    },
+    {
+      "id": "army-guard",
+      "company": "Army National Guard",
+      "position": "Avionic Mechanic",
+      "startDate": "2024-10",
+      "endDate": "Present",
+      "duration": "Oct 2024 - Present",
+      "description": [
+        "Troubleshot mission critical avionic systems",
+        "Interpreted schematics to diagnose electrical faults",
+        "Performed wire replacements and repairs"
+      ],
+      "technologies": [
+        "Electronics",
+        "Troubleshooting",
+        "Schematics",
+        "Soldering"
+      ],
+      "partTime": true,
+      "current": true
+    }
+  ],
+  "skills": {
+    "languages": ["Go", "C#", "Swift", "TypeScript", "Bash"],
+    "web": ["HTML5", "CSS3", "React"],
+    "databases": ["MySQL", "PostgreSQL"],
+    "tools": ["Git", "Docker", "Linux"],
+    "concepts": ["DSA", "Integral Calculus", "Linear Algebra"]
+  },
+  "education": [
+    {
+      "id": "saint-peters",
+      "institution": "Saint Peters University",
+      "degree": "Bachelor of Science, Computer Science",
+      "completed": "2022",
+      "coursework": [
+        "Data Structures & Algorithms",
+        "Databases/SQL",
+        "Operating Systems",
+        "Software Architecture & Design"
+      ]
+    },
+    {
+      "id": "army-aviation",
+      "institution": "1-222 AVN Regiment",
+      "degree": "Avionics Mechanic Certification",
+      "completed": "2024",
+      "coursework": ["Troubleshooting", "Soldering", "Interpret Schematics"]
+    }
+  ],
+  "projects": [
+    {
+      "id": "distributed-tasks",
+      "title": "Distributed Task Processing System",
+      "description": "A scalable, production-ready distributed task processing system built with Go",
+      "technologies": ["Go", "PostgreSQL", "Redis", "REST API"],
+      "category": "Systems",
+      "status": "completed",
+      "githubUrl": "https://github.com/aerov8/distributed-tasks"
+    },
+    {
+      "id": "fabric-nums",
+      "title": "Fabric Nums",
+      "description": "Scientific and programmer visual calculator - Command Line w/ Rust",
+      "technologies": ["Go", "CLI", "Data Management"],
+      "category": "Tools",
+      "status": "completed",
+      "githubUrl": "https://github.com/aerov8/fabric_nums"
+    },
+    {
+      "id": "opengl-testbed",
+      "title": "3D OpenGL Rendering Engine",
+      "description": "An OpenGL rendering experiment using modern OpenGL 3.3+",
+      "technologies": ["C++", "OpenGL", "GLSL", "CMake", "ImGui"],
+      "category": "Graphics",
+      "status": "completed",
+      "githubUrl": "https://github.com/aerov8/3d-opengl-testbed"
+    },
+    {
+      "id": "lla-to-ecef",
+      "title": "LLA to ECEF Converter",
+      "description": "A coordinate conversion tool to get Earth-Centered, Earth-Fixed (ECEF) Cartesian coordinates from LLA coordinates.",
+      "technologies": ["Python", "Geospatial", "Mathematics"],
+      "category": "Tools",
+      "status": "completed",
+      "githubUrl": "https://github.com/aerov8/lla-to-ecef"
+    }
+  ],
+  "achievements": {
+    "technical": ["CompTIA ITF+ Certified", "Physics Engines"],
+    "military": [
+      "B. CO. 1-222 AVN REGT Honor Graduate",
+      "Best Warrior Award",
+      "15N Class 012-24 Distinguished Graduate"
+    ]
+  },
+  "blog": {
+    "posts": [
+      {
+        "id": "pharmaceutical-systems",
+        "title": "Building Scalable Systems: Lessons from Pharmaceutical Workflows",
+        "excerpt": "Exploring the challenges and solutions in developing high-volume pharmaceutical processing systems that handle millions of prescriptions daily.",
+        "date": "2024-12-15",
+        "readTime": "8 min read",
+        "slug": "building-scalable-pharmaceutical-systems",
+        "tags": ["architecture", "scalability", "healthcare"],
+        "featured": true
+      },
+      {
+        "id": "military-to-dev",
+        "title": "From Military Training to Software Development",
+        "excerpt": "How my experience as an avionic mechanic in the Army National Guard shaped my approach to problem-solving in software engineering.",
+        "date": "2024-11-28",
+        "readTime": "6 min read",
+        "slug": "military-to-software-development",
+        "tags": ["career", "military", "problem-solving"],
+        "featured": true
+      },
+      {
+        "id": "regex-deep-dive",
+        "title": "Implementing Custom Regex Engines: A Deep Dive",
+        "excerpt": "A technical exploration of building regex engines from scratch, covering finite automata, pattern matching algorithms, and performance optimization.",
+        "date": "2024-10-20",
+        "readTime": "12 min read",
+        "slug": "custom-regex-engines-deep-dive",
+        "tags": ["go", "algorithms", "compilers"]
+      },
+      {
+        "id": "debugging-systems",
+        "title": "Debugging Complex Systems: A Systematic Approach",
+        "excerpt": "Strategies and methodologies for troubleshooting complex software systems, drawn from both military and civilian experience.",
+        "date": "2024-09-15",
+        "readTime": "7 min read",
+        "slug": "debugging-complex-systems",
+        "tags": ["debugging", "systems", "methodology"]
+      }
+    ]
+  },
+  "availability": {
+    "status": "available",
+    "message": "Available for new opportunities",
+    "openTo": ["full-time", "contract", "interesting-projects"]
+  },
+  "meta": {
+    "lastUpdated": "2025-01-13",
+    "version": "1.0",
+    "copyright": "Author's content is licensed under Creative Commons 4.0"
+  }
+}
