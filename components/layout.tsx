@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { SunIcon, MoonIcon, HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -18,11 +18,40 @@ export function Layout({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const { theme, setTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
+
+  useEffect(() => {
+    let lastY = 0;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      // Hide navbar when scrolling down past 100px, show when scrolling up
+      if (currentScrollY > lastY && currentScrollY > 100) {
+        setIsScrollingDown(true);
+      } else if (currentScrollY < lastY) {
+        setIsScrollingDown(false);
+      }
+
+      lastY = currentScrollY;
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    // Cleanup
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container px-4 md:px-8 py-1 md:py-2">
+      <header
+        className={cn(
+          "sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 navbar",
+          isScrollingDown && "navbar-hidden",
+        )}
+      >
+        <div className="w-full px-4 md:px-8 py-1 md:py-2">
           <div className="mx-auto max-w-2xl flex h-12 items-center justify-between">
             <nav className="hidden md:flex items-center gap-6">
               {navigation.map((item) => (

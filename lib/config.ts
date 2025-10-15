@@ -17,8 +17,8 @@ export const siteConfig = {
     twitter: personalInfo.contact.links.twitter.username,
   },
   keywords: [
-    ...personalInfo.skills.languages,
-    ...personalInfo.skills.web,
+    ...personalInfo.skills.languages.map((skill) => skill.name),
+    ...personalInfo.skills.web.map((skill) => skill.name),
     "Software Engineer",
     "Developer",
     "Portfolio",

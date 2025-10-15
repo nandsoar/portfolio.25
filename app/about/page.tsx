@@ -103,53 +103,113 @@ export default function AboutPage() {
             <div className="grid gap-6 md:grid-cols-2">
               <div>
                 <h3 className="font-semibold mb-3">Languages</h3>
-                <div className="flex flex-wrap gap-2">
-                  {skills.languages.map((lang) => (
-                    <span
-                      key={lang}
-                      className="bg-primary text-primary-foreground px-3 py-1 rounded-md text-sm"
+                <div className="space-y-3">
+                  {skills.languages.map((skill) => (
+                    <div
+                      key={skill.name}
+                      className="flex items-center justify-between"
                     >
-                      {lang}
-                    </span>
+                      <span className="text-sm font-medium">{skill.name}</span>
+                      <div className="flex items-center gap-2">
+                        <div className="flex gap-1">
+                          {[1, 2, 3, 4, 5].map((dot) => (
+                            <div
+                              key={dot}
+                              className={`w-2 h-2 rounded-full ${
+                                dot <= skill.level ? "bg-primary" : "bg-muted"
+                              }`}
+                            />
+                          ))}
+                        </div>
+                        <span className="text-xs text-muted-foreground ml-2">
+                          {skill.level}/5
+                        </span>
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
               <div>
                 <h3 className="font-semibold mb-3">Web Technologies</h3>
-                <div className="flex flex-wrap gap-2">
-                  {skills.web.map((tech) => (
-                    <span
-                      key={tech}
-                      className="bg-primary text-primary-foreground px-3 py-1 rounded-md text-sm"
+                <div className="space-y-3">
+                  {skills.web.map((skill) => (
+                    <div
+                      key={skill.name}
+                      className="flex items-center justify-between"
                     >
-                      {tech}
-                    </span>
+                      <span className="text-sm font-medium">{skill.name}</span>
+                      <div className="flex items-center gap-2">
+                        <div className="flex gap-1">
+                          {[1, 2, 3, 4, 5].map((dot) => (
+                            <div
+                              key={dot}
+                              className={`w-2 h-2 rounded-full ${
+                                dot <= skill.level ? "bg-primary" : "bg-muted"
+                              }`}
+                            />
+                          ))}
+                        </div>
+                        <span className="text-xs text-muted-foreground ml-2">
+                          {skill.level}/5
+                        </span>
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
               <div>
                 <h3 className="font-semibold mb-3">Databases</h3>
-                <div className="flex flex-wrap gap-2">
-                  {skills.databases.map((db) => (
-                    <span
-                      key={db}
-                      className="bg-secondary text-secondary-foreground px-3 py-1 rounded-md text-sm"
+                <div className="space-y-3">
+                  {skills.databases.map((skill) => (
+                    <div
+                      key={skill.name}
+                      className="flex items-center justify-between"
                     >
-                      {db}
-                    </span>
+                      <span className="text-sm font-medium">{skill.name}</span>
+                      <div className="flex items-center gap-2">
+                        <div className="flex gap-1">
+                          {[1, 2, 3, 4, 5].map((dot) => (
+                            <div
+                              key={dot}
+                              className={`w-2 h-2 rounded-full ${
+                                dot <= skill.level ? "bg-primary" : "bg-muted"
+                              }`}
+                            />
+                          ))}
+                        </div>
+                        <span className="text-xs text-muted-foreground ml-2">
+                          {skill.level}/5
+                        </span>
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
               <div>
                 <h3 className="font-semibold mb-3">Tools & Concepts</h3>
-                <div className="flex flex-wrap gap-2">
-                  {[...skills.tools, ...skills.concepts].map((item) => (
-                    <span
-                      key={item}
-                      className="bg-secondary text-secondary-foreground px-3 py-1 rounded-md text-sm"
+                <div className="space-y-3">
+                  {[...skills.tools, ...skills.concepts].map((skill) => (
+                    <div
+                      key={skill.name}
+                      className="flex items-center justify-between"
                     >
-                      {item}
-                    </span>
+                      <span className="text-sm font-medium">{skill.name}</span>
+                      <div className="flex items-center gap-2">
+                        <div className="flex gap-1">
+                          {[1, 2, 3, 4, 5].map((dot) => (
+                            <div
+                              key={dot}
+                              className={`w-2 h-2 rounded-full ${
+                                dot <= skill.level ? "bg-primary" : "bg-muted"
+                              }`}
+                            />
+                          ))}
+                        </div>
+                        <span className="text-xs text-muted-foreground ml-2">
+                          {skill.level}/5
+                        </span>
+                      </div>
+                    </div>
                   ))}
                 </div>
               </div>
