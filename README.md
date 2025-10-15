@@ -25,7 +25,7 @@ A modern, responsive portfolio website built with Next.js 14, TypeScript, and Ta
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm, yarn, or pnpm
 
 ### Installation
@@ -127,4 +127,4 @@ Keven Hernandez - [hkeven89@gmail.com](mailto:hkeven89@gmail.com)
 
 ---
 
-Built with ❤️ by Keven Hernandez
+Built with by Keven Hernandez
