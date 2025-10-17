@@ -80,7 +80,7 @@
   "skills": {
     "languages": [
       { "name": "Go", "level": 4 },
-      { "name": "C#", "level": 5 },
+      { "name": "C#", "level": 4 },
       { "name": "Swift", "level": 3 },
       { "name": "TypeScript", "level": 4 },
       { "name": "Bash", "level": 3 }
