@@ -172,46 +172,7 @@
     ]
   },
   "blog": {
-    "posts": [
-      {
-        "id": "pharmaceutical-systems",
-        "title": "Building Scalable Systems: Lessons from Pharmaceutical Workflows",
-        "excerpt": "Exploring the challenges and solutions in developing high-volume pharmaceutical processing systems that handle millions of prescriptions daily.",
-        "date": "2025-9-15",
-        "readTime": "8 min read",
-        "slug": "building-scalable-pharmaceutical-systems",
-        "tags": ["architecture", "scalability", "healthcare"],
-        "featured": true
-      },
-      {
-        "id": "military-to-dev",
-        "title": "From Military Training to Software Development",
-        "excerpt": "How my experience as an avionic mechanic in the Army National Guard shaped my approach to problem-solving in software engineering.",
-        "date": "2024-11-28",
-        "readTime": "6 min read",
-        "slug": "military-to-software-development",
-        "tags": ["career", "military", "problem-solving"],
-        "featured": true
-      },
-      {
-        "id": "regex-deep-dive",
-        "title": "Implementing Custom Regex Engines: A Deep Dive",
-        "excerpt": "A technical exploration of building regex engines from scratch, covering finite automata, pattern matching algorithms, and performance optimization.",
-        "date": "2024-10-20",
-        "readTime": "12 min read",
-        "slug": "custom-regex-engines-deep-dive",
-        "tags": ["go", "algorithms", "compilers"]
-      },
-      {
-        "id": "debugging-systems",
-        "title": "Debugging Complex Systems: A Systematic Approach",
-        "excerpt": "Strategies and methodologies for troubleshooting complex software systems, drawn from both military and civilian experience.",
-        "date": "2024-09-15",
-        "readTime": "7 min read",
-        "slug": "debugging-complex-systems",
-        "tags": ["debugging", "systems", "methodology"]
-      }
-    ]
+    "posts": []
   },
   "availability": {
     "status": "available",
