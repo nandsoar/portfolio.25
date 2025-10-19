@@ -172,7 +172,18 @@
     ]
   },
   "blog": {
-    "posts": []
+    "posts": [
+      {
+        "id": "pharmaceutical-systems",
+        "title": "Building Scalable Systems: Lessons from Pharmaceutical Workflows",
+        "excerpt": "Exploring the challenges and solutions in developing high-volume pharmaceutical processing systems that handle millions of prescriptions daily.",
+        "date": "2025-9-15",
+        "readTime": "8 min read",
+        "slug": "building-scalable-pharmaceutical-systems",
+        "tags": ["architecture", "scalability", "healthcare"],
+        "featured": true
+      }
+    ]
   },
   "availability": {
     "status": "available",
