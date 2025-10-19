@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
-import personalInfo from "@/data/personal-info.json";
+import { getAllPosts } from "@/lib/mdx";
 
 export const metadata: Metadata = {
   title: "Blog - Keven Hernandez",
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  const { blog } = personalInfo;
+  const posts = getAllPosts();
 
   return (
     <div className="mx-auto max-w-2xl">
@@ -21,9 +21,9 @@ export default function BlogPage() {
       </div>
 
       <div className="flex flex-col gap-6">
-        {blog.posts.map((post) => (
+        {posts.map((post) => (
           <article
-            key={post.id}
+            key={post.slug}
             className="group rounded-lg border border-border p-6 transition-all hover:bg-accent"
           >
             <Link href={`/blog/${post.slug}`}>
@@ -67,7 +67,7 @@ export default function BlogPage() {
         ))}
       </div>
 
-      {blog.posts.length === 0 && (
+      {posts.length === 0 && (
         <div className="text-center py-12">
           <p className="text-muted-foreground">
             No blog posts yet. Check back soon!

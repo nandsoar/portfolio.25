@@ -6,7 +6,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 
-const postsDirectory = path.join(process.cwd(), "content/blog");
+const postsDirectory = path.join(process.cwd(), "content/blog/blogs");
 
 export interface BlogPost {
   slug: string;

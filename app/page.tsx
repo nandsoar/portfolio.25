@@ -6,10 +6,12 @@ import {
 } from "@radix-ui/react-icons";
 import { XIcon } from "@/components/icons/x-icon";
 import personalInfo from "@/data/personal-info.json";
+import { getAllPosts } from "@/lib/mdx";
 
 export default function Home() {
   const { personal, contact, availability, experience } = personalInfo;
   const currentCompany = experience.find((exp) => exp.current);
+  const posts = getAllPosts();
 
   return (
     <div className="mx-auto flex max-w-2xl flex-col items-start justify-center">
@@ -117,12 +119,12 @@ export default function Home() {
           </Link>
         </div>
         <div className="flex flex-col gap-4">
-          {personalInfo.blog.posts
+          {posts
             .filter((post) => post.featured)
             .slice(0, 3)
             .map((post) => (
               <Link
-                key={post.id}
+                key={post.slug}
                 href={`/blog/${post.slug}`}
                 className="group rounded-lg border border-border p-4 transition-all hover:bg-accent"
               >
